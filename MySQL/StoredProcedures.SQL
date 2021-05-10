@@ -25,3 +25,19 @@ Product P
 INNER JOIN ProductDescription PD ON P.ProductID=PD.ProductID
  
 END
+
+/* Stored Procedures with Parameters */
+EXEC GetProductDesc_withparameters 706
+CREATE PROCEDURE GetProductDesc_withparameters
+(@PID INT)
+AS
+BEGIN
+SET NOCOUNT ON
+ 
+SELECT P.ProductID,P.ProductName,PD.ProductDescription  FROM 
+Product P
+INNER JOIN ProductDescription PD ON P.ProductID=PD.ProductID
+WHERE P.ProductID=@PID
+ 
+END
+EXEC GetProductDesc_withparameters 706
