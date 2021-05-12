@@ -13,7 +13,7 @@ GO
  
 INSERT INTO ProductDescription VALUES (680,'Replacement mountain wheel for entry-level rider.')
 ,(706,'Sturdy alloy features a quick-release hub.')
-,(707,'Aerodynamic rims for smooth riding.')
+,(707,'Aerodynamic rims for that stuff riding.')
 
 CREATE PROCEDURE GetProductDesc
 AS
