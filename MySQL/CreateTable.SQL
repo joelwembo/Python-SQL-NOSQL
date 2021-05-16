@@ -5,10 +5,12 @@ CREATE TABLE Employee_Info
 EmployeeID int NOT NULL,
 EmployeeName varchar(255),
 Emergency ContactName varchar(255),
-PhoneNumber int,
+PhoneNumber int(255),
 Address varchar(255),
 City varchar(255),
-Country varchar(255) CHECK (Country=='India')
+Country varchar(255) CHECK (Country=='India'),
+PRIMARY KEY (EmployeeID)
+
 );
  
 --CHECK Constraint on multiple columns
