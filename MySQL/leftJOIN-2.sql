@@ -40,4 +40,29 @@ Table 2 − Orders Table is as follows.
 
 */
 
+/*Now, let us join these two tables using the LEFT JOIN as follows.*/
+
+SQL> SELECT  ID, NAME, AMOUNT, DATE
+   FROM CUSTOMERS
+   LEFT JOIN ORDERS
+   ON CUSTOMERS.ID = ORDERS.CUSTOMER_ID;
+
+/*  his would produce the following result −
+
++----+----------+--------+---------------------+
+| ID | NAME     | AMOUNT | DATE                |
++----+----------+--------+---------------------+
+|  1 | Ramesh   |   NULL | NULL                |
+|  2 | Khilan   |   1560 | 2009-11-20 00:00:00 |
+|  3 | kaushik  |   3000 | 2009-10-08 00:00:00 |
+|  3 | kaushik  |   1500 | 2009-10-08 00:00:00 |
+|  4 | Chaitali |   2060 | 2008-05-20 00:00:00 |
+|  5 | Hardik   |   NULL | NULL                |
+|  6 | Komal    |   NULL | NULL                |
+|  7 | Muffy    |   NULL | NULL                |
++----+----------+--------+---------------------+
+
+*/
+
+
 
