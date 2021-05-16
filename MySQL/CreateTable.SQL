@@ -40,3 +40,8 @@ ADD CONSTRAINT CheckConstraintName CHECK (Country=='India');
  
 ALTER TABLE Employee_Info
 DROP CONSTRAINT CheckConstraintName;
+
+-- Drop the primarykey
+
+ALTER TABLE Employee
+DROP PRIMARY KEY;
