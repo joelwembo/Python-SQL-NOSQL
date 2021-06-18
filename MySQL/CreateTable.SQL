@@ -13,7 +13,6 @@ PRIMARY KEY (EmployeeID)
 
 );
  
---CHECK Constraint on multiple columns
  
 CREATE TABLE Employee_Info
 (
@@ -31,7 +30,7 @@ Country varchar(255) CHECK (Country = 'India' AND Cite = 'Hyderabad')
 ALTER TABLE Employee_Info
 ADD CHECK (Country=='India');
  
---To give a name to the CHECK Constraint
+--To give a name to the CHECK Constraints
  
 ALTER TABLE Employee_Info
 ADD CONSTRAINT CheckConstraintName CHECK (Country=='India');
